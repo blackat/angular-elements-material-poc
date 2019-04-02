@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { InputMaterialComponent, MaterialInputModule } from './input-material/input-material.component';
+import { MaterialInputModule } from './input-material/input-material.module';
 
 @NgModule({
   declarations: [

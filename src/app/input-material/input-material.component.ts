@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectorRef, NgMo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import { MatInputModule } from '@angular/material';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-input-material',
@@ -33,14 +34,4 @@ export class InputMaterialComponent implements OnInit {
       this.inputChanged.emit(value);
     });
   }
-
 }
-
-@NgModule({
-  imports: [BrowserAnimationsModule, ReactiveFormsModule, MatInputModule],
-  declarations: [InputMaterialComponent],
-  // entryComponents: [InputMaterialComponent],
-  exports: [InputMaterialComponent],
-  providers: []
-})
-export class MaterialInputModule { }
